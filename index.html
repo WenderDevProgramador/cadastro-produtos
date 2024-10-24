@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,9 +8,12 @@
     <script src="script/index.js" defer></script>
     <link rel="stylesheet" href="style/index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <header>
         <h1>Minha loja 1.0</h1>
@@ -30,12 +34,12 @@
 
             <div class="lineInput">
                 <label for="valor">Valor:</label>
-                <input type="text" name="valor" id="valor" placeholder="Valor produto">
+                <input type="number" name="valor" id="valor" placeholder="Valor produto">
 
             </div>
 
-            <button type="button">Adicionar</button>
-            <button type="button">Deletar</button>
+            <button type="button" id="adicionar">Adicionar</button>
+            <button type="button" id="deletar">Deletar</button>
 
         </div>
 
@@ -47,37 +51,25 @@
                     <th>VALOR</th>
                     <th>AÇÕES</th>
                 </thead>
-                <tbody>
-                    <tr>
-                        <td class="center">1</td>
-                        <td>Mesa de jantar</td>
-                        <td class="center">1900</td>
-                        <td class="center">
-                            <img src="img/escrever.png" alt="Editar">
-                        <img src="img/excluir.png" alt="Deletar"></td>
-                    </tr>
+                <tbody id="tbody">
 
-                    <tr>
-                        <td class="center">1</td>
-                        <td>Mesa de jantar</td>
-                        <td class="center">1900</td>
-                        <td class="center">
-                            <img src="img/escrever.png" alt="Editar">
-                        <img src="img/excluir.png" alt="Deletar"></td>
-                    </tr>
-
-                    <tr>
-                        <td class="center">1</td>
-                        <td>Mesa de jantar</td>
-                        <td class="center">1900</td>
-                        <td class="center">
-                            <img src="img/escrever.png" alt="Editar">
-                        <img src="img/excluir.png" alt="Deletar"></td>
-                    </tr>
                 </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="2"><b>Total de itens:</b></td>
+                        <td id="total-itens">0</td>
+                        <td colspan="2"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><b>Soma dos preços:</b></td>
+                        <td id="total-preco">R$ 0,00</td>
+                        <td colspan="2"></td>
+                    </tr>
+                </tfoot>
             </table>
         </div>
-        
+
     </main>
 </body>
+
 </html>
