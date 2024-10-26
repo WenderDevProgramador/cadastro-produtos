@@ -136,11 +136,15 @@ footer p {
 
 table {
     width: 100%; /* A tabela ocupará 100% da largura disponível */
-    table-layout: fixed; /* Controla a largura das células */
+    /*table-layout: fixed; /* Controla a largura das células */*/
     border-collapse: collapse;
 }
 th, td {
     word-wrap: break-word; /* Quebra o texto longo para caber na célula */
     padding: 8px;
     text-align: left;
+}
+
+.content {
+    overflow-x: auto;
 }
