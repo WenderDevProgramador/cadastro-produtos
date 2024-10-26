@@ -124,3 +124,23 @@ footer p {
     margin-top: 50px;
     
 }
+
+@media (max-width: 600px) {
+    table {
+        font-size: 0.9em; /* Reduz a fonte para caber melhor na tela */
+    }
+    th, td {
+        padding: 4px; /* Reduz o espaçamento para economizar espaço */
+    }
+}
+
+table {
+    width: 100%; /* A tabela ocupará 100% da largura disponível */
+    table-layout: fixed; /* Controla a largura das células */
+    border-collapse: collapse;
+}
+th, td {
+    word-wrap: break-word; /* Quebra o texto longo para caber na célula */
+    padding: 8px;
+    text-align: left;
+}
