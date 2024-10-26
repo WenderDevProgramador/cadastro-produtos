@@ -54,11 +54,13 @@ class Produto {
 
             let imgEdit = document.createElement('img');
             imgEdit.src = 'img/escrever.png';
-            imgEdit.setAttribute('onclick', 'produto.preparaEdicao(' + JSON.stringify(this.arrayProdutos[i]) + ')');
+            imgEdit.onclick = () => this.preparaEdicao(this.arrayProdutos[i]);
+            /*imgEdit.setAttribute('onclick', 'produto.preparaEdicao(' + JSON.stringify(this.arrayProdutos[i]) + ')');*/
 
             let imgDel = document.createElement('img');
             imgDel.src = 'img/excluir.png';
-            imgDel.setAttribute('onclick', 'produto.deletar(' + this.arrayProdutos[i].id + ')');
+            imgDel.onclick = () => this.deletar(this.arrayProdutos[i].id);
+            /*imgDel.setAttribute('onclick', 'produto.deletar(' + this.arrayProdutos[i].id + ')');*/
 
             td_acoes.appendChild(imgEdit);
             td_acoes.appendChild(imgDel);
