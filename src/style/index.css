@@ -136,7 +136,7 @@ footer p {
 
 table {
     width: 100%; /* A tabela ocupará 100% da largura disponível */
-    /*table-layout: fixed; /* Controla a largura das células */*/
+    
     border-collapse: collapse;
 }
 th, td {
@@ -147,4 +147,13 @@ th, td {
 
 .content {
     overflow-x: auto;
+}
+
+footer p {
+    text-align: right;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.8em;
+    margin-right: 20px;
+    margin-top: 10px;
+    
 }
